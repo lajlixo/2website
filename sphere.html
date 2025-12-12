@@ -37,12 +37,23 @@
     <span class="top__brand">Sphere</span>
   </div>
   <nav class="top__right">
-  	<div class="links">
-	    <a href="#about" class="top__link">Info</a>
-    </div>
-    <a href="https://onepagelove.com/sphere" class="top__cta">Download <span class="arrow">→</span></a>
+     <div class="links">
+       <a href="#about" class="top__link">Info</a>
+       <button id="contactBtn" class="top__link" style="margin-left:16px;cursor:pointer;">Contact</button>
+     </div>
+   
   </nav>
 </header>
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:lajlixo@gmail.com">lajlixo@gmail.com</a></p>
+    <p>Discord: <span style="font-weight:bold;">lajlixo</span></p>
+    <p>Or use the contact form on our website.</p>
+  </div>
+</div>
 <section class="hero">
   <div class="boxed">
     <span class="eyebrow">Courtesy of One Page Love</span>
@@ -109,35 +120,40 @@
 
   </div>
 </section>
+
+<!-- Contact Me Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formsubmit.co/lajlixo@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-group">
+        <label for="name">Name<span>*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email<span>*</span></label>
+        <input type="email" id="email" name="email" required placeholder="Your email">
+      </div>
+      <div class="form-group">
+        <label for="discord">Discord</label>
+        <input type="text" id="discord" name="discord" placeholder="Your Discord (optional)">
+      </div>
+      <div class="form-group">
+        <label for="message">Message<span>*</span></label>
+        <textarea id="message" name="message" required placeholder="Type your message"></textarea>
+      </div>
+      <button type="submit" class="contact-submit-btn">Send</button>
+    </form>
+    <div id="contactNotification" class="contact-notification">Message sent successfully!</div>
+  </div>
+</section>
+
 <!-- Portfolio end -->
 
-<section class="bg-alt"> 
-  <div class="bio-section">
-      <div class="bio-image" id="about">
-        <img src="./assets/img/global/author.jpg" alt="Author" />
-      </div>
-      <div class="bio-text">
-        <p>
-          'Sphere' is licensed under CC BY 3.0 — free for personal and commercial use, as long as the footer link to One Page Love remains. Remove the credit with a Sphere Pro upgrade.
-        </p>
-        <div class="bio-links">
-          <ul>      
-            <li><a href="https://onepagelove.com/go/sphere-upgrade">Upgrade</a></li>
-            <li><a href="https://onepagelove.com/sphere">Download</a></li>              
-          </ul>
-          <ul>
-            <li><a href="https://onepagelove.com/sphere">LinkedIn</a></li>
-            <li><a href="https://onepagelove.com/sphere">Email</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-</section>
 <footer class="site-footer">
   <p class="footer-left">© 2025 Your Brand or Name</p>
   <p class="footer-right">
     <a href="https://onepagelove.com/sphere">Sphere Template</a> by One Page Love
   </p>
 </footer>
-</body>
-</html>
